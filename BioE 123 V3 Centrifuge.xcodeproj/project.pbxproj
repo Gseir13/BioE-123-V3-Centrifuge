@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A34211D629BA95200095C536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211D529BA95200095C536 /* AppDelegate.swift */; };
+		A34211D829BA95200095C536 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211D729BA95200095C536 /* SceneDelegate.swift */; };
+		A34211DA29BA95200095C536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211D929BA95200095C536 /* ViewController.swift */; };
+		A34211DD29BA95200095C536 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34211DB29BA95200095C536 /* Main.storyboard */; };
+		A34211DF29BA95220095C536 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34211DE29BA95220095C536 /* Assets.xcassets */; };
+		A34211E229BA95220095C536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34211E029BA95220095C536 /* LaunchScreen.storyboard */; };
+		A34211ED29BA95230095C536 /* BioE_123_V3_CentrifugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211EC29BA95230095C536 /* BioE_123_V3_CentrifugeTests.swift */; };
+		A34211F729BA95230095C536 /* BioE_123_V3_CentrifugeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211F629BA95230095C536 /* BioE_123_V3_CentrifugeUITests.swift */; };
+		A34211F929BA95230095C536 /* BioE_123_V3_CentrifugeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211F829BA95230095C536 /* BioE_123_V3_CentrifugeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A34211E929BA95230095C536 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A34211CA29BA95200095C536 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A34211D129BA95200095C536;
+			remoteInfo = "BioE 123 V3 Centrifuge";
+		};
+		A34211F329BA95230095C536 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A34211CA29BA95200095C536 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A34211D129BA95200095C536;
+			remoteInfo = "BioE 123 V3 Centrifuge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A34211D229BA95200095C536 /* BioE 123 V3 Centrifuge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BioE 123 V3 Centrifuge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34211D529BA95200095C536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A34211D729BA95200095C536 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A34211D929BA95200095C536 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A34211DC29BA95200095C536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A34211DE29BA95220095C536 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A34211E129BA95220095C536 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A34211E329BA95220095C536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34211E829BA95230095C536 /* BioE 123 V3 CentrifugeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BioE 123 V3 CentrifugeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34211EC29BA95230095C536 /* BioE_123_V3_CentrifugeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioE_123_V3_CentrifugeTests.swift; sourceTree = "<group>"; };
+		A34211F229BA95230095C536 /* BioE 123 V3 CentrifugeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BioE 123 V3 CentrifugeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34211F629BA95230095C536 /* BioE_123_V3_CentrifugeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioE_123_V3_CentrifugeUITests.swift; sourceTree = "<group>"; };
+		A34211F829BA95230095C536 /* BioE_123_V3_CentrifugeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioE_123_V3_CentrifugeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A34211CF29BA95200095C536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34211E529BA95230095C536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34211EF29BA95230095C536 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A34211C929BA95200095C536 = {
+			isa = PBXGroup;
+			children = (
+				A34211D429BA95200095C536 /* BioE 123 V3 Centrifuge */,
+				A34211EB29BA95230095C536 /* BioE 123 V3 CentrifugeTests */,
+				A34211F529BA95230095C536 /* BioE 123 V3 CentrifugeUITests */,
+				A34211D329BA95200095C536 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A34211D329BA95200095C536 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A34211D229BA95200095C536 /* BioE 123 V3 Centrifuge.app */,
+				A34211E829BA95230095C536 /* BioE 123 V3 CentrifugeTests.xctest */,
+				A34211F229BA95230095C536 /* BioE 123 V3 CentrifugeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A34211D429BA95200095C536 /* BioE 123 V3 Centrifuge */ = {
+			isa = PBXGroup;
+			children = (
+				A34211D529BA95200095C536 /* AppDelegate.swift */,
+				A34211D729BA95200095C536 /* SceneDelegate.swift */,
+				A34211D929BA95200095C536 /* ViewController.swift */,
+				A34211DB29BA95200095C536 /* Main.storyboard */,
+				A34211DE29BA95220095C536 /* Assets.xcassets */,
+				A34211E029BA95220095C536 /* LaunchScreen.storyboard */,
+				A34211E329BA95220095C536 /* Info.plist */,
+			);
+			path = "BioE 123 V3 Centrifuge";
+			sourceTree = "<group>";
+		};
+		A34211EB29BA95230095C536 /* BioE 123 V3 CentrifugeTests */ = {
+			isa = PBXGroup;
+			children = (
+				A34211EC29BA95230095C536 /* BioE_123_V3_CentrifugeTests.swift */,
+			);
+			path = "BioE 123 V3 CentrifugeTests";
+			sourceTree = "<group>";
+		};
+		A34211F529BA95230095C536 /* BioE 123 V3 CentrifugeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A34211F629BA95230095C536 /* BioE_123_V3_CentrifugeUITests.swift */,
+				A34211F829BA95230095C536 /* BioE_123_V3_CentrifugeUITestsLaunchTests.swift */,
+			);
+			path = "BioE 123 V3 CentrifugeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A34211D129BA95200095C536 /* BioE 123 V3 Centrifuge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A34211FC29BA95230095C536 /* Build configuration list for PBXNativeTarget "BioE 123 V3 Centrifuge" */;
+			buildPhases = (
+				A34211CE29BA95200095C536 /* Sources */,
+				A34211CF29BA95200095C536 /* Frameworks */,
+				A34211D029BA95200095C536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BioE 123 V3 Centrifuge";
+			productName = "BioE 123 V3 Centrifuge";
+			productReference = A34211D229BA95200095C536 /* BioE 123 V3 Centrifuge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A34211E729BA95230095C536 /* BioE 123 V3 CentrifugeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A34211FF29BA95230095C536 /* Build configuration list for PBXNativeTarget "BioE 123 V3 CentrifugeTests" */;
+			buildPhases = (
+				A34211E429BA95230095C536 /* Sources */,
+				A34211E529BA95230095C536 /* Frameworks */,
+				A34211E629BA95230095C536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A34211EA29BA95230095C536 /* PBXTargetDependency */,
+			);
+			name = "BioE 123 V3 CentrifugeTests";
+			productName = "BioE 123 V3 CentrifugeTests";
+			productReference = A34211E829BA95230095C536 /* BioE 123 V3 CentrifugeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A34211F129BA95230095C536 /* BioE 123 V3 CentrifugeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A342120229BA95230095C536 /* Build configuration list for PBXNativeTarget "BioE 123 V3 CentrifugeUITests" */;
+			buildPhases = (
+				A34211EE29BA95230095C536 /* Sources */,
+				A34211EF29BA95230095C536 /* Frameworks */,
+				A34211F029BA95230095C536 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A34211F429BA95230095C536 /* PBXTargetDependency */,
+			);
+			name = "BioE 123 V3 CentrifugeUITests";
+			productName = "BioE 123 V3 CentrifugeUITests";
+			productReference = A34211F229BA95230095C536 /* BioE 123 V3 CentrifugeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A34211CA29BA95200095C536 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A34211D129BA95200095C536 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A34211E729BA95230095C536 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A34211D129BA95200095C536;
+					};
+					A34211F129BA95230095C536 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A34211D129BA95200095C536;
+					};
+				};
+			};
+			buildConfigurationList = A34211CD29BA95200095C536 /* Build configuration list for PBXProject "BioE 123 V3 Centrifuge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A34211C929BA95200095C536;
+			productRefGroup = A34211D329BA95200095C536 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A34211D129BA95200095C536 /* BioE 123 V3 Centrifuge */,
+				A34211E729BA95230095C536 /* BioE 123 V3 CentrifugeTests */,
+				A34211F129BA95230095C536 /* BioE 123 V3 CentrifugeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A34211D029BA95200095C536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34211E229BA95220095C536 /* LaunchScreen.storyboard in Resources */,
+				A34211DF29BA95220095C536 /* Assets.xcassets in Resources */,
+				A34211DD29BA95200095C536 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34211E629BA95230095C536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34211F029BA95230095C536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A34211CE29BA95200095C536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34211DA29BA95200095C536 /* ViewController.swift in Sources */,
+				A34211D629BA95200095C536 /* AppDelegate.swift in Sources */,
+				A34211D829BA95200095C536 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34211E429BA95230095C536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34211ED29BA95230095C536 /* BioE_123_V3_CentrifugeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34211EE29BA95230095C536 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34211F729BA95230095C536 /* BioE_123_V3_CentrifugeUITests.swift in Sources */,
+				A34211F929BA95230095C536 /* BioE_123_V3_CentrifugeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A34211EA29BA95230095C536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A34211D129BA95200095C536 /* BioE 123 V3 Centrifuge */;
+			targetProxy = A34211E929BA95230095C536 /* PBXContainerItemProxy */;
+		};
+		A34211F429BA95230095C536 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A34211D129BA95200095C536 /* BioE 123 V3 Centrifuge */;
+			targetProxy = A34211F329BA95230095C536 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A34211DB29BA95200095C536 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A34211DC29BA95200095C536 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A34211E029BA95220095C536 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A34211E129BA95220095C536 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A34211FA29BA95230095C536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A34211FB29BA95230095C536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A34211FD29BA95230095C536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CUZ7VYK4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BioE 123 V3 Centrifuge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-18.BioE-123-V3-Centrifuge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A34211FE29BA95230095C536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CUZ7VYK4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BioE 123 V3 Centrifuge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-18.BioE-123-V3-Centrifuge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A342120029BA95230095C536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CUZ7VYK4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-18.BioE-123-V3-CentrifugeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioE 123 V3 Centrifuge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BioE 123 V3 Centrifuge";
+			};
+			name = Debug;
+		};
+		A342120129BA95230095C536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CUZ7VYK4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-18.BioE-123-V3-CentrifugeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BioE 123 V3 Centrifuge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BioE 123 V3 Centrifuge";
+			};
+			name = Release;
+		};
+		A342120329BA95230095C536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CUZ7VYK4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-18.BioE-123-V3-CentrifugeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BioE 123 V3 Centrifuge";
+			};
+			name = Debug;
+		};
+		A342120429BA95230095C536 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7CUZ7VYK4D;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Team-18.BioE-123-V3-CentrifugeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BioE 123 V3 Centrifuge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A34211CD29BA95200095C536 /* Build configuration list for PBXProject "BioE 123 V3 Centrifuge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34211FA29BA95230095C536 /* Debug */,
+				A34211FB29BA95230095C536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A34211FC29BA95230095C536 /* Build configuration list for PBXNativeTarget "BioE 123 V3 Centrifuge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34211FD29BA95230095C536 /* Debug */,
+				A34211FE29BA95230095C536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A34211FF29BA95230095C536 /* Build configuration list for PBXNativeTarget "BioE 123 V3 CentrifugeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A342120029BA95230095C536 /* Debug */,
+				A342120129BA95230095C536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A342120229BA95230095C536 /* Build configuration list for PBXNativeTarget "BioE 123 V3 CentrifugeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A342120329BA95230095C536 /* Debug */,
+				A342120429BA95230095C536 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A34211CA29BA95200095C536 /* Project object */;
+}
