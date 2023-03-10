@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53F0297D03B6BC68D2954329 /* Pods_BioE_123_V3_CentrifugeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E399634E089922A273CF239 /* Pods_BioE_123_V3_CentrifugeTests.framework */; };
+		5E1F133F84FF6171740FC433 /* Pods_BioE_123_V3_Centrifuge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1E473FBE66E8CFC5F479BF5 /* Pods_BioE_123_V3_Centrifuge.framework */; };
+		6CE2FB1CB0AA888CC4D9A20D /* Pods_BioE_123_V3_Centrifuge_BioE_123_V3_CentrifugeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B135C688F18DCEB5D5841FF /* Pods_BioE_123_V3_Centrifuge_BioE_123_V3_CentrifugeUITests.framework */; };
 		A34211D629BA95200095C536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211D529BA95200095C536 /* AppDelegate.swift */; };
 		A34211D829BA95200095C536 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211D729BA95200095C536 /* SceneDelegate.swift */; };
 		A34211DA29BA95200095C536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211D929BA95200095C536 /* ViewController.swift */; };
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E399634E089922A273CF239 /* Pods_BioE_123_V3_CentrifugeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioE_123_V3_CentrifugeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E6454B2D11DE4F57F2B183A /* Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.release.xcconfig"; path = "Target Support Files/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		185ED486E1E175CDCA24599D /* Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.debug.xcconfig"; path = "Target Support Files/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B135C688F18DCEB5D5841FF /* Pods_BioE_123_V3_Centrifuge_BioE_123_V3_CentrifugeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioE_123_V3_Centrifuge_BioE_123_V3_CentrifugeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1C5A4CC5073F63920E4D49 /* Pods-BioE 123 V3 Centrifuge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioE 123 V3 Centrifuge.release.xcconfig"; path = "Target Support Files/Pods-BioE 123 V3 Centrifuge/Pods-BioE 123 V3 Centrifuge.release.xcconfig"; sourceTree = "<group>"; };
 		A34211D229BA95200095C536 /* BioE 123 V3 Centrifuge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BioE 123 V3 Centrifuge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34211D529BA95200095C536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A34211D729BA95200095C536 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		A34211F229BA95230095C536 /* BioE 123 V3 CentrifugeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BioE 123 V3 CentrifugeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34211F629BA95230095C536 /* BioE_123_V3_CentrifugeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioE_123_V3_CentrifugeUITests.swift; sourceTree = "<group>"; };
 		A34211F829BA95230095C536 /* BioE_123_V3_CentrifugeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioE_123_V3_CentrifugeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1E473FBE66E8CFC5F479BF5 /* Pods_BioE_123_V3_Centrifuge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioE_123_V3_Centrifuge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21A6688E67DC1A2F4D50699 /* Pods-BioE 123 V3 CentrifugeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioE 123 V3 CentrifugeTests.release.xcconfig"; path = "Target Support Files/Pods-BioE 123 V3 CentrifugeTests/Pods-BioE 123 V3 CentrifugeTests.release.xcconfig"; sourceTree = "<group>"; };
+		EDF8E4AECE164B9DC79C5C38 /* Pods-BioE 123 V3 Centrifuge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioE 123 V3 Centrifuge.debug.xcconfig"; path = "Target Support Files/Pods-BioE 123 V3 Centrifuge/Pods-BioE 123 V3 Centrifuge.debug.xcconfig"; sourceTree = "<group>"; };
+		FD2411F4C3AE7147937EAAE9 /* Pods-BioE 123 V3 CentrifugeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioE 123 V3 CentrifugeTests.debug.xcconfig"; path = "Target Support Files/Pods-BioE 123 V3 CentrifugeTests/Pods-BioE 123 V3 CentrifugeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1F133F84FF6171740FC433 /* Pods_BioE_123_V3_Centrifuge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F0297D03B6BC68D2954329 /* Pods_BioE_123_V3_CentrifugeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CE2FB1CB0AA888CC4D9A20D /* Pods_BioE_123_V3_Centrifuge_BioE_123_V3_CentrifugeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1FD6658E0EB679B94630AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDF8E4AECE164B9DC79C5C38 /* Pods-BioE 123 V3 Centrifuge.debug.xcconfig */,
+				6F1C5A4CC5073F63920E4D49 /* Pods-BioE 123 V3 Centrifuge.release.xcconfig */,
+				185ED486E1E175CDCA24599D /* Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.debug.xcconfig */,
+				0E6454B2D11DE4F57F2B183A /* Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.release.xcconfig */,
+				FD2411F4C3AE7147937EAAE9 /* Pods-BioE 123 V3 CentrifugeTests.debug.xcconfig */,
+				B21A6688E67DC1A2F4D50699 /* Pods-BioE 123 V3 CentrifugeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		500ED83C833663A3EF5EF7B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1E473FBE66E8CFC5F479BF5 /* Pods_BioE_123_V3_Centrifuge.framework */,
+				5B135C688F18DCEB5D5841FF /* Pods_BioE_123_V3_Centrifuge_BioE_123_V3_CentrifugeUITests.framework */,
+				0E399634E089922A273CF239 /* Pods_BioE_123_V3_CentrifugeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A34211C929BA95200095C536 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				A34211EB29BA95230095C536 /* BioE 123 V3 CentrifugeTests */,
 				A34211F529BA95230095C536 /* BioE 123 V3 CentrifugeUITests */,
 				A34211D329BA95200095C536 /* Products */,
+				2F1FD6658E0EB679B94630AE /* Pods */,
+				500ED83C833663A3EF5EF7B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A34211FC29BA95230095C536 /* Build configuration list for PBXNativeTarget "BioE 123 V3 Centrifuge" */;
 			buildPhases = (
+				8D041C8F11B227B3F4A93EFD /* [CP] Check Pods Manifest.lock */,
 				A34211CE29BA95200095C536 /* Sources */,
 				A34211CF29BA95200095C536 /* Frameworks */,
 				A34211D029BA95200095C536 /* Resources */,
+				1A3E3E765EDDFA6F4E16BFC5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A34211FF29BA95230095C536 /* Build configuration list for PBXNativeTarget "BioE 123 V3 CentrifugeTests" */;
 			buildPhases = (
+				E30B7D6E69AAB4B5F84C37CC /* [CP] Check Pods Manifest.lock */,
 				A34211E429BA95230095C536 /* Sources */,
 				A34211E529BA95230095C536 /* Frameworks */,
 				A34211E629BA95230095C536 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A342120229BA95230095C536 /* Build configuration list for PBXNativeTarget "BioE 123 V3 CentrifugeUITests" */;
 			buildPhases = (
+				9D309463AFC73E7D6978346A /* [CP] Check Pods Manifest.lock */,
 				A34211EE29BA95230095C536 /* Sources */,
 				A34211EF29BA95230095C536 /* Frameworks */,
 				A34211F029BA95230095C536 /* Resources */,
+				166DB9ACEDCCB728A40D8843 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		166DB9ACEDCCB728A40D8843 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A3E3E765EDDFA6F4E16BFC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioE 123 V3 Centrifuge/Pods-BioE 123 V3 Centrifuge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BioE 123 V3 Centrifuge/Pods-BioE 123 V3 Centrifuge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BioE 123 V3 Centrifuge/Pods-BioE 123 V3 Centrifuge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D041C8F11B227B3F4A93EFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioE 123 V3 Centrifuge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D309463AFC73E7D6978346A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E30B7D6E69AAB4B5F84C37CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BioE 123 V3 CentrifugeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A34211CE29BA95200095C536 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		A34211FD29BA95230095C536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDF8E4AECE164B9DC79C5C38 /* Pods-BioE 123 V3 Centrifuge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +610,7 @@
 		};
 		A34211FE29BA95230095C536 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F1C5A4CC5073F63920E4D49 /* Pods-BioE 123 V3 Centrifuge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +639,7 @@
 		};
 		A342120029BA95230095C536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2411F4C3AE7147937EAAE9 /* Pods-BioE 123 V3 CentrifugeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +660,7 @@
 		};
 		A342120129BA95230095C536 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21A6688E67DC1A2F4D50699 /* Pods-BioE 123 V3 CentrifugeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +681,7 @@
 		};
 		A342120329BA95230095C536 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 185ED486E1E175CDCA24599D /* Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +700,7 @@
 		};
 		A342120429BA95230095C536 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E6454B2D11DE4F57F2B183A /* Pods-BioE 123 V3 Centrifuge-BioE 123 V3 CentrifugeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
