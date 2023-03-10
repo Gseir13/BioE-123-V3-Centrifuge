@@ -8,7 +8,7 @@
 import UIKit
 
 var setSpeed:Int = 0
-var pickedTime = [0, 0, 0, 0]
+var pickedTime = [0, 0]
 // Then, setTime = 10 * pickedTime[0] + pickedTime[1] + (pickedTime[2] * 10 + pickedTime[3]) / 60
 var setTime:Double = 0.0
 
@@ -54,11 +54,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         self.TimePicker.delegate = self
         self.TimePicker.dataSource = self
         
-        timePickerData = [["0", "1", "2"],
-                          ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
-                          [":"],
-                          ["0", "1", "2", "3", "4", "5"],
-                          ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]]
+        timePickerData = [["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+                           "14", "15", "16", "17", "18", "19", "20"],
+                          ["m"],
+                          ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13",
+                           "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
+                           "41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
+                           "51", "52", "53", "54", "55", "56", "57", "58", "59",],
+                          ["s"]]
     }
     
     override func didReceiveMemoryWarning() {
@@ -67,7 +70,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 5
+        return 4
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -83,12 +86,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // This method is triggered whenever the user makes a change to the picker selection.
         // The parameter named row and component represents what was selected.
-        if (component != 2) {
-            if (component < 2) {
+        if (component == 0) {
                 pickedTime[component] = Int(timePickerData[component][row])!
-            } else {
-                pickedTime[component - 1] = Int(timePickerData[component][row])!
-            }
+        }
+        if (component == 2) {
+            pickedTime[1] = Int(timePickerData[component][row])!
         }
     }
 
