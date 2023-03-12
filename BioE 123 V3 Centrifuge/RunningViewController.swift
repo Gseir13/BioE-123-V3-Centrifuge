@@ -12,29 +12,53 @@ class RunningViewController: UIViewController {
 
     @IBOutlet weak var RPMNumber: UILabel!
     
+    @IBOutlet weak var CountdownLabel: UILabel!
     
-    @IBOutlet weak var CentCountDown: UIDatePicker!
+    @IBOutlet weak var Stop: UIButton!
+    
+    
+    @IBAction func StopButton(_ sender: Any) {
+        let stopFuncArgs = [] as [Any]
+        var stopTask = myPhoton!.callFunction("stop", withArguments: stopFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+            if (error == nil) {
+                print("Stop was successful")
+            }
+        }
+    }
     
     let chartView = LineChartView()
+    
+    var minutes:Int = pickedTime[0]
+    var seconds:Int = pickedTime[1]
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(didUpdatedChartView), userInfo: nil, repeats: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillAppear(animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        RPMNumber.text = String(setSpeed)
+        Stop.setTitleColor(UIColor.black, for: .normal)
+        Stop.setTitle("Stop", for: .normal)
         
-        CentCountDown.countDownDuration = (setTime * 60)
+        RPMNumber.text = "\(setSpeed) RPM"
+        updateLabel()
+        startTimer()
+        
 
         view.addSubview(chartView)
         chartView.translatesAutoresizingMaskIntoConstraints = false
         chartView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        //chartView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        chartView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
         chartView.widthAnchor.constraint(equalToConstant: view.frame.width - 32).isActive = true
-        chartView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        chartView.heightAnchor.constraint(equalToConstant: 250).isActive = true
         
         
         setupInitialDataEntries()
@@ -64,6 +88,7 @@ class RunningViewController: UIViewController {
         let chartData = LineChartData(dataSet: chartDataSet)
         chartView.data = chartData
         chartView.xAxis.labelPosition = .bottom
+        chartView.xAxis.drawLabelsEnabled = false
     }
     
     func updateChartView(with newDataEntry: ChartDataEntry, dataEntries: inout [ChartDataEntry]) {
@@ -99,6 +124,31 @@ class RunningViewController: UIViewController {
             }
         })
         
+    }
+    
+    private func startTimer() {
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: {_ in
+            if (self.seconds > 0) {
+                self.seconds = self.seconds - 1
+            } else if (self.minutes > 0 && self.seconds == 0) {
+                self.minutes = self.minutes - 1
+                self.seconds = 59
+            }
+            
+            self.updateLabel()
+        })
+    }
+    
+    private func updateLabel() {
+        if (minutes > 9 && seconds > 9) {
+            CountdownLabel.text = "\(minutes):\(seconds)"
+        } else if (minutes > 9 && seconds < 10) {
+            CountdownLabel.text = "\(minutes):0\(seconds)"
+        } else if (minutes < 10 && seconds > 9) {
+            CountdownLabel.text = "0\(minutes):\(seconds)"
+        } else {
+            CountdownLabel.text = "0\(minutes):0\(seconds)"
+        }
     }
 }
 

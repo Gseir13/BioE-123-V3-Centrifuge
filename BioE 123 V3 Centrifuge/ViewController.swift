@@ -46,7 +46,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         var startTask = myPhoton!.callFunction("start", withArguments: startFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
             if (error == nil) {
                 print("Start was successful")
-                //self.performSegue(withIdentifier: "RunningCent", sender: nil)
+                self.performSegue(withIdentifier: "RunningCent", sender: nil)
             }
         }*/
     }
