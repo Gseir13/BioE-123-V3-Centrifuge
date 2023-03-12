@@ -191,6 +191,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqa-vU-SUh" userLabel="Back">
+                                <rect key="frame" x="12.666666666666664" y="47.333333333333329" width="75" height="34.333333333333329"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="backButton:" destination="vEu-nG-JfR" eventType="touchUpInside" id="tAI-Wp-k3B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SNj-ZH-8tR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -200,13 +208,17 @@
                             <constraint firstItem="KJJ-fU-68k" firstAttribute="centerX" secondItem="FgE-ey-hr3" secondAttribute="centerX" id="Xf1-ut-NlG"/>
                             <constraint firstItem="KJJ-fU-68k" firstAttribute="centerY" secondItem="FgE-ey-hr3" secondAttribute="centerY" constant="200" id="YnW-Na-xxP"/>
                             <constraint firstItem="OtI-ET-ykK" firstAttribute="centerX" secondItem="FgE-ey-hr3" secondAttribute="centerX" id="nKw-FK-Ggs"/>
+                            <constraint firstItem="yqa-vU-SUh" firstAttribute="centerX" secondItem="FgE-ey-hr3" secondAttribute="centerX" constant="-145" id="u0d-Nz-5EK"/>
                             <constraint firstItem="OtI-ET-ykK" firstAttribute="centerY" secondItem="FgE-ey-hr3" secondAttribute="centerY" constant="-125" id="uQN-oR-bbO"/>
+                            <constraint firstItem="yqa-vU-SUh" firstAttribute="centerY" secondItem="FgE-ey-hr3" secondAttribute="centerY" constant="-357.5" id="w6G-e2-Vcl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="CountdownLabel" destination="ryz-cJ-h4h" id="rNf-nE-dDn"/>
                         <outlet property="RPMNumber" destination="6WX-6k-fj7" id="VdJ-bt-8vr"/>
                         <outlet property="Stop" destination="KJJ-fU-68k" id="5Z8-ii-PZA"/>
+                        <outlet property="back" destination="yqa-vU-SUh" id="Dxd-XJ-xib"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="allDone" modalPresentationStyle="fullScreen" id="HfZ-ml-QJb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1s-70-AEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

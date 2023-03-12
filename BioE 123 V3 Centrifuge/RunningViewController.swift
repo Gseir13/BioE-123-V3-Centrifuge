@@ -16,12 +16,20 @@ class RunningViewController: UIViewController {
     
     @IBOutlet weak var Stop: UIButton!
     
+    @IBOutlet weak var back: UIButton!
+    
+    @IBAction func backButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "allDone", sender: nil)
+    }
     
     @IBAction func StopButton(_ sender: Any) {
         let stopFuncArgs = [] as [Any]
         var stopTask = myPhoton!.callFunction("stop", withArguments: stopFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
             if (error == nil) {
                 print("Stop was successful")
+                self.seconds = 0
+                self.minutes = 0
+                self.CountdownLabel.text = "0\(self.minutes):0\(self.seconds)"
             }
         }
     }
@@ -47,6 +55,9 @@ class RunningViewController: UIViewController {
 
         Stop.setTitleColor(UIColor.black, for: .normal)
         Stop.setTitle("Stop", for: .normal)
+        
+        back.setTitleColor(UIColor.blue, for: .normal)
+        back.setTitle("Back", for: .normal)
         
         RPMNumber.text = "\(setSpeed) RPM"
         updateLabel()
@@ -146,8 +157,10 @@ class RunningViewController: UIViewController {
             CountdownLabel.text = "\(minutes):0\(seconds)"
         } else if (minutes < 10 && seconds > 9) {
             CountdownLabel.text = "0\(minutes):\(seconds)"
-        } else {
+        } else if (minutes < 10 && seconds < 10) {
             CountdownLabel.text = "0\(minutes):0\(seconds)"
+        } else if (minutes == 0 && seconds == 0) {
+            
         }
     }
 }
