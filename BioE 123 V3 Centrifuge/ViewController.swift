@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import Particle_SDK
 
 var setSpeed:Int = 0
 var pickedTime = [0, 0]
-// Then, setTime = 10 * pickedTime[0] + pickedTime[1] + (pickedTime[2] * 10 + pickedTime[3]) / 60
 var setTime:Double = 0.0
+var myPhoton : ParticleDevice?
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -22,6 +23,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             self.RPMInput.backgroundColor = .red
             self.RPMInput.text = ""
         } else {
+            self.RPMInput.backgroundColor = .white
             setSpeed = Int(self.RPMInput.text ?? "0")!
         }
     }
@@ -30,25 +32,72 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var timePickerData: [[String]] = [[String]]()
     
     
-    @IBAction func RPMEnter(_ sender: Any) {
+    /*@IBAction func RPMEnter(_ sender: Any) {
         if (self.RPMInput.text != "") {
             RPMInput.endEditing(true)
         }
         // Could also just do tap anywhere to enter
-    }
+    }*/
     
     @IBAction func StartButton(_ sender: Any) {
+        setTime = Double(pickedTime[0]) + (Double(pickedTime[1]) / 60)
+        let startFuncArgs = [setSpeed, setTime] as [Any]
+        var startTask = myPhoton!.callFunction("start", withArguments: startFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+            if (error == nil) {
+                print("Start was successful")
+            }
+        }
     }
     
     @IBAction func StopButton(_ sender: Any) {
+        let stopFuncArgs = [] as [Any]
+        var stopTask = myPhoton!.callFunction("stop", withArguments: stopFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+            if (error == nil) {
+                print("Stop was successful")
+            }
+        }
     }
+    
+    @IBOutlet weak var start: UIButton!
+    
+    @IBOutlet weak var stop: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+        ParticleCloud.sharedInstance().login(withUser: "gseir@stanford.edu", password: userPass) { (error:Error?) -> Void in
+            if let _ = error {
+                print("Wrong credentials or no internet connectivity, please try again")
+            }
+            else {
+                print("Logged in")
+            }
+        }
+        
+        ParticleCloud.sharedInstance().getDevices { (devices:[ParticleDevice]?, error:Error?) -> Void in
+            if let _ = error {
+                print("Check your internet connectivity")
+            }
+            else {
+                if let d = devices {
+                    for device in d {
+                        if device.name == "BioE_123_V3_Centrifuge_-_Photon" {
+                            myPhoton = device
+                        }
+                    }
+                }
+            }
+        }
+        
+        
         RPMInput.placeholder = "0...2800"
         RPMInput.keyboardType = .numberPad
+        start.setTitleColor(UIColor.black, for: .normal)
+        start.setTitle("Start", for: .normal)
+        stop.setTitleColor(UIColor.black, for: .normal)
+        stop.setTitle("Stop", for: .normal)
         
         // Connect data:
         self.TimePicker.delegate = self
@@ -62,6 +111,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                            "41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
                            "51", "52", "53", "54", "55", "56", "57", "58", "59",],
                           ["s"]]
+        
+        let tapGestureBackground = UITapGestureRecognizer(target: self, action: #selector(self.backgroundTapped(_:)))
+        self.view.addGestureRecognizer(tapGestureBackground)
+    }
+    
+    @objc func backgroundTapped(_ sender: UITapGestureRecognizer)
+    {
+        if (self.RPMInput.text != "") {
+            RPMInput.endEditing(true)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -96,3 +155,23 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let userPass = "Gabriel2002!"
