@@ -125,6 +125,7 @@
                         <outlet property="TimePicker" destination="7J3-di-2SY" id="vs2-36-gYS"/>
                         <outlet property="start" destination="d7d-EX-K8F" id="vii-Rb-fhp"/>
                         <outlet property="stop" destination="awF-iE-ysU" id="RuN-74-8Sj"/>
+                        <segue destination="vEu-nG-JfR" kind="show" identifier="RunningCent" destinationCreationSelector="centRunning:" id="iSq-tt-B99"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -136,15 +137,47 @@
             <objects>
                 <viewController id="vEu-nG-JfR" customClass="RunningViewController" customModule="BioE_123_V3_Centrifuge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FgE-ey-hr3">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="x9f-mO-hCR">
+                                <rect key="frame" x="35" y="275" width="320" height="236.33333333333337"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnc-eZ-RqA">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="20.333333333333332"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Running at " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZr-w6-JxL">
+                                                <rect key="frame" x="0.0" y="0.0" width="278.66666666666669" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6WX-6k-fj7" userLabel="RPMNumber">
+                                                <rect key="frame" x="278.66666666666669" y="0.0" width="41.333333333333314" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hom-hM-2Pb" userLabel="CentCountDown">
+                                        <rect key="frame" x="0.0" y="20.333333333333343" width="320" height="216"/>
+                                    </datePicker>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SNj-ZH-8tR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cyl-oL-TNh"/>
+                    <connections>
+                        <outlet property="CentCountDown" destination="Hom-hM-2Pb" id="6hK-Hs-Sln"/>
+                        <outlet property="RPMNumber" destination="6WX-6k-fj7" id="VdJ-bt-8vr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1s-70-AEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006" y="4"/>
+            <point key="canvasLocation" x="1004.6153846153845" y="3.5545023696682461"/>
         </scene>
     </scenes>
     <resources>

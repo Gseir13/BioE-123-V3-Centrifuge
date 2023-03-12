@@ -40,13 +40,15 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }*/
     
     @IBAction func StartButton(_ sender: Any) {
-        setTime = Double(pickedTime[0]) + (Double(pickedTime[1]) / 60)
+        self.performSegue(withIdentifier: "RunningCent", sender: nil)
+        /*setTime = Double(pickedTime[0]) + (Double(pickedTime[1]) / 60)
         let startFuncArgs = [setSpeed, setTime] as [Any]
         var startTask = myPhoton!.callFunction("start", withArguments: startFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
             if (error == nil) {
                 print("Start was successful")
+                //self.performSegue(withIdentifier: "RunningCent", sender: nil)
             }
-        }
+        }*/
     }
     
     @IBAction func StopButton(_ sender: Any) {
