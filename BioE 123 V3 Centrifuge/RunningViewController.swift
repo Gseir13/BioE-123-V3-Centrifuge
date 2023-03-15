@@ -43,6 +43,7 @@ class RunningViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(didUpdatedChartView), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(didStartCoverRampDown), userInfo: nil, repeats: true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -131,6 +132,27 @@ class RunningViewController: UIViewController {
                                                       y: currentRPM.doubleValue)
                     self.updateChartView(with: newDataEntry, dataEntries: &self.dataEntries)
                     self.xValue += 1
+                }
+            }
+        })
+        
+    }
+    
+    @objc func didStartCoverRampDown() {
+        myPhoton!.getVariable("caseRemovedRelatedRampDown", completion: { (result:Any?, error:Error?) -> Void in
+            if let _ = error {
+                print("Failed to read caseRemovedRelatedRampDown")
+            }
+            else {
+                if let caseRemovedRelatedRampDown = result as? NSNumber {
+                    print("caseRemovedRelatedRampDown is \(caseRemovedRelatedRampDown.stringValue)")
+                    
+                    let status = caseRemovedRelatedRampDown.intValue
+                    if (status == 1) {
+                        var popUpWindow: PopUpWindow!
+                        popUpWindow = PopUpWindow(title: "Error", text: "Case removed - Ramping Down", buttontext: "OK")
+                        self.present(popUpWindow, animated: true, completion: nil)
+                    }
                 }
             }
         })

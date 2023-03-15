@@ -20,6 +20,7 @@
 		A34211F729BA95230095C536 /* BioE_123_V3_CentrifugeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211F629BA95230095C536 /* BioE_123_V3_CentrifugeUITests.swift */; };
 		A34211F929BA95230095C536 /* BioE_123_V3_CentrifugeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34211F829BA95230095C536 /* BioE_123_V3_CentrifugeUITestsLaunchTests.swift */; };
 		A3C0C7AA29BD6DA7008BC751 /* RunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C0C7A929BD6DA7008BC751 /* RunningViewController.swift */; };
+		A3C29C4029C173E10061D626 /* popUpErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C29C3F29C173E10061D626 /* popUpErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A34211F629BA95230095C536 /* BioE_123_V3_CentrifugeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioE_123_V3_CentrifugeUITests.swift; sourceTree = "<group>"; };
 		A34211F829BA95230095C536 /* BioE_123_V3_CentrifugeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioE_123_V3_CentrifugeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A3C0C7A929BD6DA7008BC751 /* RunningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningViewController.swift; sourceTree = "<group>"; };
+		A3C29C3F29C173E10061D626 /* popUpErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUpErrorMessage.swift; sourceTree = "<group>"; };
 		B1E473FBE66E8CFC5F479BF5 /* Pods_BioE_123_V3_Centrifuge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BioE_123_V3_Centrifuge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21A6688E67DC1A2F4D50699 /* Pods-BioE 123 V3 CentrifugeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioE 123 V3 CentrifugeTests.release.xcconfig"; path = "Target Support Files/Pods-BioE 123 V3 CentrifugeTests/Pods-BioE 123 V3 CentrifugeTests.release.xcconfig"; sourceTree = "<group>"; };
 		EDF8E4AECE164B9DC79C5C38 /* Pods-BioE 123 V3 Centrifuge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BioE 123 V3 Centrifuge.debug.xcconfig"; path = "Target Support Files/Pods-BioE 123 V3 Centrifuge/Pods-BioE 123 V3 Centrifuge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				A34211D529BA95200095C536 /* AppDelegate.swift */,
 				A34211D729BA95200095C536 /* SceneDelegate.swift */,
 				A34211D929BA95200095C536 /* ViewController.swift */,
+				A3C29C3F29C173E10061D626 /* popUpErrorMessage.swift */,
 				A34211DB29BA95200095C536 /* Main.storyboard */,
 				A3C0C7A929BD6DA7008BC751 /* RunningViewController.swift */,
 				A34211DE29BA95220095C536 /* Assets.xcassets */,
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A34211DA29BA95200095C536 /* ViewController.swift in Sources */,
+				A3C29C4029C173E10061D626 /* popUpErrorMessage.swift in Sources */,
 				A34211D629BA95200095C536 /* AppDelegate.swift in Sources */,
 				A3C0C7AA29BD6DA7008BC751 /* RunningViewController.swift in Sources */,
 				A34211D829BA95200095C536 /* SceneDelegate.swift in Sources */,

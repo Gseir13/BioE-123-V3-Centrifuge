@@ -46,8 +46,19 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let startFuncArgs = [startArgString] as [Any]
         var startTask = myPhoton!.callFunction("start", withArguments: startFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
             if (error == nil) {
-                print("Start was successful")
-                self.performSegue(withIdentifier: "RunningCent", sender: nil)
+                if (resultCode == -1) {
+                    // This means protective box is not attached -> want to give user a pop-up to attach the box
+                    var popUpWindow: PopUpWindow!
+                    popUpWindow = PopUpWindow(title: "Error", text: "Please reinsert cover before proceeding", buttontext: "OK")
+                    self.present(popUpWindow, animated: true, completion: nil)
+                    
+                    
+                    // Also need to add pop-up in other screen if ramp-down initiated due to case removal, can use the rampDownDueToCaseRemoval variable
+                    
+                } else {
+                    print("Start was successful")
+                    self.performSegue(withIdentifier: "RunningCent", sender: nil)
+                }
             }
         }
     }
