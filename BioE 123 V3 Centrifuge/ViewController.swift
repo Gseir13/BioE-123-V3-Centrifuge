@@ -47,23 +47,29 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         startArgString = ""
         startArgString = "\(setSpeed) \(setTime)"
         let startFuncArgs = [startArgString] as [Any]
-        var startTask = myPhoton!.callFunction("start", withArguments: startFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
-            if (error == nil) {
-                if (resultCode == -1) {
-                    // This means protective box is not attached -> want to give user a pop-up to attach the box
-                    var popUpWindow: PopUpWindow!
-                    popUpWindow = PopUpWindow(title: "Error", text: "Please reinsert cover before proceeding", buttontext: "OK")
-                    self.present(popUpWindow, animated: true, completion: nil)
-                    
+        if (myPhoton != nil) {
+            var startTask = myPhoton!.callFunction("start", withArguments: startFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
+                if (error == nil) {
+                    if (resultCode == -1) {
+                        // This means protective box is not attached -> want to give user a pop-up to attach the box
+                        var popUpWindow: PopUpWindow!
+                        popUpWindow = PopUpWindow(title: "Error", text: "Please reinsert cover before proceeding", buttontext: "OK")
+                        self.present(popUpWindow, animated: true, completion: nil)
+                        
+                    } else {
+                        print("Start was successful")
+                        self.performSegue(withIdentifier: "RunningCent", sender: nil)
+                    }
                 } else {
-                    print("Start was successful")
-                    self.performSegue(withIdentifier: "RunningCent", sender: nil)
+                    var popUpWindow: PopUpWindow!
+                    popUpWindow = PopUpWindow(title: "Error", text: "Centrifuge is not connected to the internet, please reconnect and try again", buttontext: "OK")
+                    self.present(popUpWindow, animated: true, completion: nil)
                 }
-            } else {
-                var popUpWindow: PopUpWindow!
-                popUpWindow = PopUpWindow(title: "Error", text: "Centrifuge is not connected, please reconnect and try again", buttontext: "OK")
-                self.present(popUpWindow, animated: true, completion: nil)
             }
+        } else {
+            var popUpWindow: PopUpWindow!
+            popUpWindow = PopUpWindow(title: "Error", text: "Wait a moment while the app logs in to access the centrifuge", buttontext: "OK")
+            self.present(popUpWindow, animated: true, completion: nil)
         }
     }
     
