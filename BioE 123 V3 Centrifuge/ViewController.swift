@@ -39,10 +39,13 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // Could also just do tap anywhere to enter
     }*/
     
+    var startArgString = ""
+    
     @IBAction func StartButton(_ sender: Any) {
         //self.performSegue(withIdentifier: "RunningCent", sender: nil)
         setTime = Double(pickedTime[0]) + (Double(pickedTime[1]) / 60)
-        let startArgString = "\(setSpeed) \(setTime)"
+        startArgString = ""
+        startArgString = "\(setSpeed) \(setTime)"
         let startFuncArgs = [startArgString] as [Any]
         var startTask = myPhoton!.callFunction("start", withArguments: startFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
             if (error == nil) {
@@ -51,9 +54,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                     var popUpWindow: PopUpWindow!
                     popUpWindow = PopUpWindow(title: "Error", text: "Please reinsert cover before proceeding", buttontext: "OK")
                     self.present(popUpWindow, animated: true, completion: nil)
-                    
-                    
-                    // Also need to add pop-up in other screen if ramp-down initiated due to case removal, can use the rampDownDueToCaseRemoval variable
                     
                 } else {
                     print("Start was successful")
