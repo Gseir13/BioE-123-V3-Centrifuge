@@ -21,14 +21,14 @@ private class PopUpWindowView: UIView {
         super.init(frame: CGRect.zero)
         
         // Popup Background
-               popupView.backgroundColor = UIColor.blue
+        popupView.backgroundColor = getUIColor(hex: "#D16666")
                popupView.layer.borderWidth = BorderWidth
                popupView.layer.masksToBounds = true
                popupView.layer.borderColor = UIColor.white.cgColor
                
                // Popup Title
                popupTitle.textColor = UIColor.white
-               popupTitle.backgroundColor = UIColor.yellow
+               popupTitle.backgroundColor = getUIColor(hex: "#88A2AA")
                popupTitle.layer.masksToBounds = true
                popupTitle.adjustsFontSizeToFitWidth = true
                popupTitle.clipsToBounds = true
@@ -45,7 +45,7 @@ private class PopUpWindowView: UIView {
                // Popup Button
                popupButton.setTitleColor(UIColor.white, for: .normal)
                popupButton.titleLabel?.font = UIFont.systemFont(ofSize: 23.0, weight: .bold)
-               popupButton.backgroundColor = UIColor.yellow
+               popupButton.backgroundColor = getUIColor(hex: "#88A2AA")
                
                popupView.addSubview(popupTitle)
                popupView.addSubview(popupText)
@@ -96,6 +96,28 @@ private class PopUpWindowView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func getUIColor(hex: String, alpha: Double = 1.0) -> UIColor? {
+        var cleanString = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+        if (cleanString.hasPrefix("#")) {
+            cleanString.remove(at: cleanString.startIndex)
+        }
+
+        if ((cleanString.count) != 6) {
+            return nil
+        }
+
+        var rgbValue: UInt32 = 0
+        Scanner(string: cleanString).scanHexInt32(&rgbValue)
+
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
     }
     
 }

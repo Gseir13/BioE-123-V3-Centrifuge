@@ -59,6 +59,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                     print("Start was successful")
                     self.performSegue(withIdentifier: "RunningCent", sender: nil)
                 }
+            } else {
+                var popUpWindow: PopUpWindow!
+                popUpWindow = PopUpWindow(title: "Error", text: "Centrifuge is not connected, please reconnect and try again", buttontext: "OK")
+                self.present(popUpWindow, animated: true, completion: nil)
             }
         }
     }
