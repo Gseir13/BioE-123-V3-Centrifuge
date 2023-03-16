@@ -45,6 +45,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func StartButton(_ sender: Any) {
         //self.performSegue(withIdentifier: "RunningCent", sender: nil)
         setTime = (pickedTime[0] * 60) + pickedTime[1]
+        print("setTime: \(setTime)")
         startArgString = ""
         startArgString = "\(setSpeed) \(setTime)"
         let startFuncArgs = [startArgString] as [Any]
@@ -56,7 +57,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                         var popUpWindow: PopUpWindow!
                         popUpWindow = PopUpWindow(title: "Error", text: "Please reinsert cover before proceeding", buttontext: "OK")
                         self.present(popUpWindow, animated: true, completion: nil)
-                        
                     } else {
                         print("Start was successful")
                         self.performSegue(withIdentifier: "RunningCent", sender: nil)
