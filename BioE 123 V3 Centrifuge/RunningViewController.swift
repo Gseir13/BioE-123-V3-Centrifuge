@@ -30,6 +30,10 @@ class RunningViewController: UIViewController {
                 self.seconds = 0
                 self.minutes = 0
                 self.CountdownLabel.text = "0\(self.minutes):0\(self.seconds)"
+            } else {
+                self.seconds = 0
+                self.minutes = 0
+                self.CountdownLabel.text = "0\(self.minutes):0\(self.seconds)"
             }
         }
     }

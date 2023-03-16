@@ -10,7 +10,8 @@ import Particle_SDK
 
 var setSpeed:Int = 0
 var pickedTime = [0, 0]
-var setTime:Double = 0.0
+//var setTime:Double = 0.0
+var setTime:Int = 0
 var myPhoton : ParticleDevice?
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
@@ -43,7 +44,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func StartButton(_ sender: Any) {
         //self.performSegue(withIdentifier: "RunningCent", sender: nil)
-        setTime = Double(pickedTime[0]) + (Double(pickedTime[1]) / 60)
+        setTime = (pickedTime[0] * 60) + pickedTime[1]
         startArgString = ""
         startArgString = "\(setSpeed) \(setTime)"
         let startFuncArgs = [startArgString] as [Any]
