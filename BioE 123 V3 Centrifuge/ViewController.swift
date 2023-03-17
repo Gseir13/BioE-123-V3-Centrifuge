@@ -43,13 +43,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var startArgString = ""
     
     @IBAction func StartButton(_ sender: Any) {
-        //self.performSegue(withIdentifier: "RunningCent", sender: nil)
         setTime = (pickedTime[0] * 60) + pickedTime[1]
         print("setTime: \(setTime)")
         startArgString = ""
         startArgString = "\(setSpeed) \(setTime)"
         let startFuncArgs = [startArgString] as [Any]
-        if (myPhoton != nil) {
+        if (RPMInput.isEditing) {
+            var popUpWindow: PopUpWindow!
+            popUpWindow = PopUpWindow(title: "Error", text: "Please tap off of the RPM input keyboard before proceeding", buttontext: "OK")
+            self.present(popUpWindow, animated: true, completion: nil)
+        } else if (myPhoton != nil) {
             var startTask = myPhoton!.callFunction("start", withArguments: startFuncArgs) { (resultCode : NSNumber?, error : Error?) -> Void in
                 if (error == nil) {
                     if (resultCode == -1) {

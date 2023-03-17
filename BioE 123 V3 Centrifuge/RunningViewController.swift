@@ -156,6 +156,10 @@ class RunningViewController: UIViewController {
                         var popUpWindow: PopUpWindow!
                         popUpWindow = PopUpWindow(title: "Error", text: "Case removed - Ramping Down", buttontext: "OK")
                         self.present(popUpWindow, animated: true, completion: nil)
+                        
+                        self.seconds = 0
+                        self.minutes = 0
+                        self.CountdownLabel.text = "0\(self.minutes):0\(self.seconds)"
                     }
                 }
             }
