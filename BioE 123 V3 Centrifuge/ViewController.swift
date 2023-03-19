@@ -10,7 +10,6 @@ import Particle_SDK
 
 var setSpeed:Int = 0
 var pickedTime = [0, 0]
-//var setTime:Double = 0.0
 var setTime:Int = 0
 var myPhoton : ParticleDevice?
 
@@ -31,14 +30,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBOutlet weak var TimePicker: UIPickerView!
     var timePickerData: [[String]] = [[String]]()
-    
-    
-    /*@IBAction func RPMEnter(_ sender: Any) {
-        if (self.RPMInput.text != "") {
-            RPMInput.endEditing(true)
-        }
-        // Could also just do tap anywhere to enter
-    }*/
     
     var startArgString = ""
     
